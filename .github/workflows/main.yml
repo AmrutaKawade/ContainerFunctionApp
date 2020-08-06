@@ -34,7 +34,7 @@ jobs:
       id: fa
       with:
         app-name: containerfunapp
-        image: REGISTRY/NAMESPACE/IMAGE:TAG
+        image: amrutakawade/azurefunctionsimage:v1.0.0
     #- name: 'use the published functionapp url in upcoming steps'
     #  run: |
     #    echo "${{ steps.fa.outputs.app-url }}"
