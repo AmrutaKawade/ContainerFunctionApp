@@ -28,6 +28,7 @@ jobs:
       run: |
         # If your function app project is not located in your repository's root
         # Please change the path to your directory for docker build
+        docker login docker.io
         docker build . -t amrutakawade/azurefunctionsimage:latest
         docker push amrutakawade/azurefunctionsimage:latest
     - name: 'Run Azure Functions Container Action'
