@@ -33,7 +33,7 @@ jobs:
         docker push docker.io/amrutakawade/azurefunctionsimage:latest
         
     - name: 'Run Azure Functions Container Action'
-      uses: Azure/functions-container-action@v1
+      uses: AmrutaKawade/functions-container-action@users/amkawade/lima-poc
       id: fa
       with:
         app-name: KubeConFunApp
